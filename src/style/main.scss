@@ -7,7 +7,7 @@
 @import "partials/variable";
 
 body {
-  padding: 25px;
+  margin: 0 30px;
 }
 
 
@@ -49,6 +49,7 @@ h2{
 
 .video-banner {
   position: relative;
+  top: 30px;
   display: flex;
   justify-content: center;
   -webkit-box-shadow: 0 40px 70px -20px rgba(0, 0, 0, 0.5);
@@ -63,8 +64,8 @@ h2{
   }
   &__container {
     position: absolute;
-    top: -15px;
-    max-width: 1170px;
+    top: -20px;
+    max-width: 1140px;
     margin: 0 auto;
     width: 100%;
     padding: 0 15px;
@@ -134,7 +135,7 @@ h2{
 }
 
 .header-nav {
-  max-width: 1170px;
+  max-width: 1140px;
   padding: 50px 15px;
   margin: 0 auto;
   display: flex;
@@ -163,7 +164,7 @@ h2{
   background: $greyLight;
   padding: 50px 0;
   &__container {
-    max-width: 1170px;
+    max-width: 1140px;
     padding: 0 15px;
     margin: 0 auto;
   }
@@ -203,9 +204,95 @@ h2{
 
 .approach {
   background: $grey;
+
   &__container {
-    max-width: 1170px;
+    max-width: 1140px;
     padding: 15px;
+    margin: 0 auto;
+  }
+  &__box {
+    padding: 15px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  &__box_right {
+    justify-content: flex-end;
+  }
+  &__box_center {
+    flex-direction: column;
+  }
+  &__box-content {
+    img {
+      width: 500px;
+    }
+  }
+  &__box-description {
+    position: relative;
+    background: $darkBlue;
+    width: 350px;
+    margin-top: -5px;
+    margin-left: 40px;
+    p{
+      padding: 50px 25px;
+      font-family: $acrThin;
+      font-size: 24px;
+      color: #ffffff;
+      text-align: left;
+      margin: 0;
+    }
+  }
+  &__box-description_second {
+    top: -20px;
+    margin-left: 80px;
+  }
+  &__box-description_third {
+    width: 500px;
+    margin-left: 0;
+  }
+  &__box-description_fourth {
+    width: 200px;
+    z-index: 9;
+    margin-left: 0;
+  }
+  &__box-content_fourth {
+    position: relative;
+    img {
+      width: 300px;
+    }
+  }
+  &__box-img {
+    margin-left: 5px;
+    img {
+      width: 100px;
+    }
+  }
+  &__box-img_right {
+    margin-left: 0;
+    margin-right: 5px;
+  }
+  &__box-img_sixth {
+    margin-right: 5px;
+    img {
+      width: 65px;
+    }
+  }
+  &__box-content_sixth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 600px;
+    }
+  }
+  %__box-description_sixth {
+    margin-left: 0;
+    margin-top: 0;
+    p {
+      font-size: 36px;
+      font-family: $acrRegular;
+    }
   }
 }
 
