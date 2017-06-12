@@ -10,6 +10,9 @@ body {
   margin: 0 30px;
 }
 
+.wrapper {
+  margin: 0 50px;
+}
 
 .orange-btn{
   background: $orange;
@@ -27,6 +30,19 @@ body {
 .blue-btn{
   background: $blue;
   color: #ffffff;
+  font-family: $acrBold;
+  padding: 15px;
+  border-radius: 0 15px 0 15px;
+  border: none 0;
+  cursor: pointer;
+  -webkit-box-shadow: 0 15px 20px -10px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 15px 20px -10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 15px 20px -10px rgba(0, 0, 0, 0.5);
+}
+
+.default-btn{
+  background: #ffffff;
+  color: $black;
   font-family: $acrBold;
   padding: 15px;
   border-radius: 0 15px 0 15px;
@@ -209,6 +225,9 @@ h2{
     max-width: 1140px;
     padding: 15px;
     margin: 0 auto;
+    h2 {
+      padding-top: 30px;
+    }
   }
   &__box {
     padding: 15px 0;
@@ -286,7 +305,7 @@ h2{
       width: 600px;
     }
   }
-  %__box-description_sixth {
+  &__box-description_sixth {
     margin-left: 0;
     margin-top: 0;
     p {
@@ -295,6 +314,142 @@ h2{
     }
   }
 }
+
+.simplification {
+  &__container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+    h2 {
+      padding-bottom: 70px;
+      padding-top: 30px;
+    }
+  }
+  &__description {
+    background: $orangeGrad;
+    margin-top: 150px;
+    position: relative;
+    margin-bottom: 150px;
+  }
+  &__img {
+    position: absolute;
+    top: -200px;
+    left: 15%;
+    width: 30%;
+    img {
+      width: 100%;
+    }
+  }
+  &__title {
+    position: relative;
+    right: 0;
+    top: -100px;
+    left: 50%;
+    width: 50%;
+    h1 {
+      font-size: 46px;
+      font-family: $acrThin;
+      color: $darkBlue;
+      margin-bottom: 80px;
+      span {
+        font-family: $acrExBold;
+      }
+    }
+    p {
+      font-family: $segoeL;
+      font-size: 21px;
+      color: #ffffff;
+      margin-bottom: 100px;
+    }
+    button {
+      font-size: 36px;
+      padding: 15px 40px;
+    }
+  }
+  &__data-wrap {
+    background: $middleBlue;
+  }
+  &__data {
+    display: flex;
+    justify-content: center;
+    padding: 0 50px;
+  }
+  &__data-text {
+    width: 50%;
+    padding: 30px 30px 30px 0;
+    h3 {
+      font-family: $acrBold;
+      font-size: 44px;
+      color: #ffffff;
+      span {
+        color: $orangeD;
+      }
+    }
+    li {
+      color: $orangeD;
+    }
+    p {
+      color: #ffffff;
+      font-family: $segoeL;
+      font-size: 18px;
+    }
+  }
+  &__data-btn {
+    position: relative;
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 30px 30px 30px;
+    background: url("../img/pruning-bg.png")no-repeat;
+    background-size: cover;
+    z-index: 1;
+    button {
+      font-size: 24px;
+      font-family: $acrBold;
+    }
+  }
+  &__make-wrap {
+    display: flex;
+    h3 {
+      font-family: $acrBold;
+      font-size: 44px;
+      color: #ffffff;
+    }
+    li {
+      color: #ffffff;
+    }
+    p {
+      color: #ffffff;
+      font-family: $segoeL;
+      font-size: 18px;
+    }
+  }
+  &__make {
+    background: $blue;
+    padding: 30px;
+    position: relative;
+    i {
+      font-size: 300px;
+      position: absolute;
+      top: 0;
+      color: #ffffff;
+      opacity: 0.3;
+    }
+  }
+  &__reject {
+    padding: 30px;
+    background: $orange;
+    position: relative;
+    i {
+      font-size: 300px;
+      position: absolute;
+      top: 0;
+      color: #ffffff;
+      opacity: 0.3;
+    }
+  }
+}
+
 
 /*-- RESPONSIVE STYLE -----------------------------*/
 
