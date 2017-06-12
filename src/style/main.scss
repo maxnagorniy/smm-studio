@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+
+@import "../../bower_components/normalize.css/normalize.css";
+
+@import "partials/fonts";
+@import "partials/variable";
+
+
+h1{
+  font-family: $acrBold;
+}
+
+
+/*-- RESPONSIVE STYLE -----------------------------*/
+
+
+@import "partials/responsive";
