@@ -1,8 +1,208 @@
+/*- DESKTOP > LG -----------------------------------------------*/
+
+@media (max-width: 1331px) {
+
+  .wrapper {
+    margin: 0;
+  }
+
+  .simplification {
+    &__description {
+      margin-bottom: 150px;
+    }
+    &__img {
+      width: 25%;
+    }
+  }
+
+  .video-banner{
+    &__info {
+      padding: 50px 15px 0;
+    }
+    &__info-block {
+      h1 {
+        font-size: 58px;
+      }
+    }
+  }
+
+  .header {
+    margin-top: 100px;
+  }
+}
 /*- DESKTOP LG -------------------------------------------------*/
 
 @media (max-width: 1171px) {
 
+  body {
+    margin: 0;
+  }
 
+  h2 {
+    font-size: 28px;
+  }
+
+  .site-logo {
+    width: 300px;
+  }
+
+  .video-banner{
+    &__container {
+      top: -12px;
+      padding: 0;
+    }
+    &__info-block {
+      padding: 20px 0 40px 20px;
+      h1 {
+        font-size: 44px;
+      }
+      button {
+        font-size: 30px;
+        padding: 20px;
+      }
+    }
+  }
+
+  .header {
+    margin-top: 50px;
+  }
+
+  .header-nav {
+    padding: 15px;
+    &__logo {
+      margin-right: 20px;
+      img {
+        width: 200px;
+      }
+    }
+  }
+
+  .our-success {
+    padding: 20px 0;
+    &__subs-text {
+      font-size: 40px;
+    }
+    &__subs-btn {
+      font-size: 18px;
+      span {
+        font-size: 30px;
+      }
+    }
+  }
+
+  .approach {
+    &__box-description {
+      p {
+        font-size: 18px;
+        padding: 25px 15px;
+      }
+    }
+    &__box-description_sixth {
+      p {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .simplification{
+    &__container {
+      h2 {
+        padding-bottom: 50px;
+      }
+    }
+    &__description {
+      margin-top: 0;
+      margin-bottom: 30px;
+    }
+    &__img {
+      width: 15%;
+      top: 4px;
+    }
+    &__title {
+      top: -60px;
+      h1 {
+        font-size: 32px;
+      }
+      button {
+        font-size: 28px;
+      }
+    }
+  }
+
+  .simplification {
+    &__data {
+       padding: 0 15px;
+    }
+    &__data-text {
+      h3 {
+        font-size: 32px;
+      }
+      p{
+        font-size: 16px;
+      }
+    }
+    &__data-btn {
+      button {
+        font-size: 20px;
+      }
+    }
+    &__make {
+      h3 {
+        font-size: 32px;
+      }
+      p{
+        font-size: 16px;
+      }
+    }
+    &__reject {
+      h3 {
+        font-size: 32px;
+      }
+      p{
+        font-size: 16px;
+      }
+    }
+  }
+
+  .about-us {
+    &__brands {
+      padding: 15px 0;
+    }
+    &__img {
+      width: 30%;
+    }
+    &__content {
+      width: 60%;
+    }
+    &__title {
+      left: 0;
+      top: 0;
+      margin: 0 auto;
+      padding: 15px 50px;
+    }
+    &__brands-title {
+      top: 0;
+    }
+  }
+
+  .callback__title {
+    padding: 50px 40px;
+  }
+
+  .footer {
+    &__container {
+      padding: 15px;
+    }
+    &__logo {
+      width: 200px;
+      img {
+        width: 100%;
+      }
+    }
+    &__sub-title {
+      padding: 15px;
+    }
+  }
 
 }
 
@@ -10,20 +210,352 @@
 
 @media (max-width: 991px) {
 
+  .video-banner {
+    &__contact {
+      .number {
+        font-size: 26px;
+      }
+      .sub-title {
+        font-size: 12px;
+      }
+    }
+  }
 
+  .simplification {
+    &__container {
+      padding: 0;
+      h2 {
+        padding: 15px;
+        margin: 0;
+      }
+    }
+    &__img {
+      width: 110px;
+      left: 20px;
+      top: -25px;
+    }
+    &__title {
+      top: 10px;
+      left: 30%;
+      width: 400px;
+      h1 {
+        margin-bottom: 0;
+        color: #ffffff;
+      }
+      p {
+        color: #ffffff;
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+      button {
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+    }
+    &__data {
+      flex-direction: column;
+      padding: 30px;
+      background: url("../img/pruning-bg.png")no-repeat;
+      background-size: cover;
+      z-index: 1;
+    }
+    &__data-text {
+      width: 100%;
+      padding: 0;
+    }
+    &__data-btn {
+      width: 100%;
+      padding: 0;
+      background: none;
+    }
+    &__make {
+      padding: 15px;
+    }
+    &__reject {
+      padding: 15px;
+    }
+  }
+
+  .about-us {
+    &__content {
+      p {
+        font-size: 14px;
+      }
+      .orange-text {
+        font-size: 18px;
+      }
+    }
+    &__title {
+      h1 {
+        font-size: 30px;
+        text-align: center;
+      }
+    }
+  }
+
+  .callback {
+    &__title {
+      padding: 15px;
+    }
+    &__form-block {
+      button {
+        font-size: 20px;
+      }
+    }
+  }
 
 }
 
 /*- TABLET SM  -------------------------------------------------*/
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 
+  h2 {
+    font-size: 24px;
+    padding: 0;
+  }
+
+  .site-logo {
+    width: 200px;
+  }
+
+  .video-banner {
+    &__container {
+      top: -8px;
+    }
+    &__social-link {
+      margin-top: 10px;
+    }
+    &__info {
+      flex-direction: column;
+      padding: 15px;
+    }
+    &__info-block {
+      background-image: -ms-linear-gradient(left, $darkBlue 0%, $darkBlue 50%,  rgba(255, 255, 255, 0) 50%,  rgba(255, 255, 255, 0) 100%);
+      background-image: -moz-linear-gradient(left, $darkBlue 0%, $darkBlue 50%,  rgba(255, 255, 255, 0) 50%,  rgba(255, 255, 255, 0) 100%);
+      background-image: -o-linear-gradient(left, $darkBlue 0%, $darkBlue 50%,  rgba(255, 255, 255, 0) 50%,  rgba(255, 255, 255, 0) 100%);
+      background-image: -webkit-gradient(linear, left top, right top, color-stop(0, $darkBlue), color-stop(50, $darkBlue), color-stop(50, rgba(255, 255, 255, 0)), color-stop(100, rgba(255, 255, 255, 0)));
+      background-image: -webkit-linear-gradient(left, $darkBlue 0%, $darkBlue 50%,  rgba(255, 255, 255, 0) 50%,  rgba(255, 255, 255, 0) 100%);
+      h1 {
+        font-size: 38px;
+      }
+      button {
+        font-size: 26px;
+      }
+    }
+    &__contact {
+      padding-top: 15px;
+    }
+  }
+
+  .header-nav {
+    &__link {
+      width: 100%;
+      display: block;
+      float: none;
+      position: absolute;
+      left: 0;
+      top: 55px;
+      background: $grey;
+      text-align: center;
+      z-index: 999;
+      opacity: 0.9;
+      li {
+        width: 50%;
+        margin: 10px auto;
+      }
+    }
+  }
+
+  .our-success {
+    &__subs {
+      padding: 30px 20px;
+    }
+    &__subs-text {
+      font-size: 24px;
+    }
+    &__subs-btn {
+      font-size: 14px;
+      padding: 15px;
+      span {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .approach {
+    h2 {
+      padding: 0;
+    }
+    &__box-content {
+      width: 100%;
+    }
+    &__box-description {
+      width: 100%;
+      margin: -5px 0 0 0;
+      p {
+        padding: 15px;
+      }
+    }
+    &__box-content_sixth {
+      flex-direction: column;
+    }
+    &__box-content_fourth {
+      width: 50%;
+    }
+    &__box-description_fourth {
+      width: 50%;
+    }
+  }
+
+  .simplification {
+    &__description {
+      margin-bottom: 0;
+    }
+    &__img {
+      display: none;
+    }
+    &__title {
+      left: 0;
+      width: 93%;
+      padding: 10px;
+      h1 {
+        font-size: 24px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+    &__data {
+      padding: 15px;
+    }
+    &__data-text {
+      h3 {
+        font-size: 24px;
+      }
+      p {
+        font-size: 14px;
+        margin: 5px 0;
+      }
+    }
+    &__data-btn {
+      button {
+        font-size: 16px;
+        padding: 10px;
+      }
+    }
+    &__make-wrap {
+      flex-direction: column;
+    }
+    &__make {
+      h3 {
+        font-size: 24px;
+      }
+      p {
+        font-size: 14px;
+        margin: 5px 0;
+      }
+      i {
+        font-size: 220px;
+      }
+    }
+    &__reject {
+      h3 {
+        font-size: 24px;
+      }
+      p {
+        font-size: 14px;
+        margin: 5px 0;
+      }
+      i {
+        font-size: 220px;
+      }
+    }
+  }
+
+  .about-us {
+    &__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    &__img {
+      width: 100%;
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &__content {
+      width: 100%;
+      margin-bottom: 10px;
+      p {
+        margin-bottom: 10px;
+      }
+    }
+    &__title {
+      width: 100%;
+      padding: 10px;
+      max-width: 220px;
+      h1 {
+        font-size: 24px;
+      }
+      p {
+        font-size: 12px;
+      }
+    }
+    &__brands-title {
+      font-size: 16px;
+    }
+    &__brands {
+      img {
+        width: 60px;
+      }
+    }
+  }
+
+  .callback {
+    &__container {
+      flex-direction: column;
+    }
+    &__title {
+      width: 90%;
+      padding: 10px;
+      h3 {
+        font-size: 26px;
+      }
+    }
+    &__form {
+      width: 100%;
+      padding: 0;
+    }
+    &__form-block {
+      justify-content: center;
+      input {
+        width: 100%;
+      }
+    }
+  }
+
+  .footer {
+    &__title {
+      flex-direction: column;
+    }
+    &__link {
+      padding: 10px 0;
+    }
+    &__sub-title {
+      text-align: center;
+      padding: 0;
+    }
+  }
 
 }
 
 /*- PHONE XS ---------------------------------------------------*/
 
 @media (max-width: 576px) {
+
+
 
 
 
@@ -34,6 +566,19 @@
 @media (max-width: 450px) {
 
 
+  .video-banner {
+    &__logo {
+      justify-content: center;
+    }
+    &__info-block {
+      h1 {
+        font-size: 30px;
+      }
+      button {
+        font-size: 20px;
+      }
+    }
+  }
 
 
 }
