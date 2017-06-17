@@ -26,9 +26,6 @@
     }
   }
 
-  .header {
-    margin-top: 100px;
-  }
 }
 /*- DESKTOP LG -------------------------------------------------*/
 
@@ -61,10 +58,6 @@
         padding: 20px;
       }
     }
-  }
-
-  .header {
-    margin-top: 50px;
   }
 
   .header-nav {
@@ -181,7 +174,7 @@
       padding: 15px 50px;
     }
     &__brands-title {
-      top: 0;
+      top: 10px;
     }
   }
 
@@ -217,6 +210,28 @@
       }
       .sub-title {
         font-size: 12px;
+      }
+    }
+  }
+
+  .toggle-menu {
+    display: block;
+  }
+
+  .header-nav {
+    justify-content: space-between;
+    &__link {
+      display: none;
+      position: absolute;
+      background: $grey;
+      z-index: 999;
+      opacity: 0.95;
+      width: 100%;
+      top: 50px;
+      left: 0;
+      text-align: center;
+      li {
+        padding: 15px;
       }
     }
   }
@@ -345,25 +360,6 @@
     }
     &__contact {
       padding-top: 15px;
-    }
-  }
-
-  .header-nav {
-    &__link {
-      width: 100%;
-      display: block;
-      float: none;
-      position: absolute;
-      left: 0;
-      top: 55px;
-      background: $grey;
-      text-align: center;
-      z-index: 999;
-      opacity: 0.9;
-      li {
-        width: 50%;
-        margin: 10px auto;
-      }
     }
   }
 
@@ -518,8 +514,8 @@
       flex-direction: column;
     }
     &__title {
-      width: 90%;
-      padding: 10px;
+      width: 100%;
+      padding: 20px;
       h3 {
         font-size: 26px;
       }

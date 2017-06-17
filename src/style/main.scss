@@ -11,31 +11,17 @@ body {
   margin: 0 30px;
 }
 
+
+
 .wrapper {
   margin: 0 50px;
-}
-
-.navbar-toggler {
-  position: absolute;
-  right: 15px;
-  display: none;
-  margin: 2px 0;
-  border: 0;
-  background: transparent;
-  outline: none;
-  i {
-    color: $blue;
-    font-size: 26px;
-  }
-  @media (max-width: 768px) {
-    display: block;
-  }
 }
 
 .orange-btn {
   background: $orange;
   color: #ffffff;
   font-family: $acrBold;
+  outline: none;
   padding: 15px;
   border-radius: 0 15px 0 15px;
   border: none 0;
@@ -43,12 +29,18 @@ body {
   -webkit-box-shadow: 0 15px 20px -10px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0 15px 20px -10px rgba(0, 0, 0, 0.5);
   box-shadow: 0 15px 20px -10px rgba(0, 0, 0, 0.5);
+  &:hover,
+  &:focus {
+    background: $orangeD;
+    transition: all 0.3s ease;
+  }
 }
 
 .blue-btn {
   background: $blue;
   color: #ffffff;
   font-family: $acrBold;
+  outline: none;
   padding: 15px;
   border-radius: 0 15px 0 15px;
   border: none 0;
@@ -56,11 +48,17 @@ body {
   -webkit-box-shadow: 0 15px 20px -10px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0 15px 20px -10px rgba(0, 0, 0, 0.5);
   box-shadow: 0 15px 20px -10px rgba(0, 0, 0, 0.5);
+  &:hover,
+  &:focus {
+    background: #3D80AB;
+    transition: all 0.3s ease;
+  }
 }
 
 .default-btn {
   background: #ffffff;
   color: $black;
+  outline: none;
   font-family: $acrBold;
   padding: 15px;
   border-radius: 0 15px 0 15px;
@@ -69,6 +67,11 @@ body {
   -webkit-box-shadow: 0 15px 20px -10px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0 15px 20px -10px rgba(0, 0, 0, 0.5);
   box-shadow: 0 15px 20px -10px rgba(0, 0, 0, 0.5);
+  &:hover,
+  &:focus {
+    background: $grey;
+    transition: all 0.3s ease;
+  }
 }
 
 .site-logo {
@@ -79,11 +82,33 @@ h2{
   font-family: $segoeB;
   font-size: 32px;
   color: $black;
+  padding: 30px 0;
+  margin: 0;
+}
+
+.toggle-menu {
+  display: none;
+  background: transparent;
+  border: 0 none;
+  outline: 0 none;
+  i {
+    font-size: 25px;
+    color: $black;
+  }
+  &:hover,
+  &:focus {
+    i {
+      color: $blue;
+      transition: all 0.4s ease;
+    }
+
+  }
 }
 
 /* ------------------- VIDEO BLOCK -------------------- */
 
 .video-banner {
+  margin-bottom: 100px;
   position: relative;
   top: 30px;
   display: flex;
@@ -116,6 +141,13 @@ h2{
   &__social-link {
     a {
       padding: 15px;
+      &:hover,
+      &:focus {
+        i {
+          color: $orangeD;
+          transition: all 0.3s ease;
+        }
+      }
       i {
         color: #ffffff;
       }
@@ -167,13 +199,10 @@ h2{
 
 /* ------------------- HEADER MENU -------------------- */
 
-.header {
-  margin-top: 200px;
-}
 
 .header-nav {
   max-width: 1170px;
-  padding: 50px 15px;
+  padding: 15px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -187,13 +216,17 @@ h2{
     display: flex;
     flex-flow: row wrap;
     li {
-      padding-right: 10px;
-      padding-top: 4px;
+      padding-right: 15px;
     }
     a {
       text-decoration: none;
       font-family: $segoeB;
       color: $black;
+      &:hover,
+      &:focus {
+        color: $orangeD;
+        transition: all 0.5s ease;
+      }
     }
   }
 }
@@ -202,7 +235,8 @@ h2{
 
 .our-success {
   background: $greyLight;
-  padding: 50px 0;
+  padding: 20px 0;
+  margin-top: 30px;
   &__container {
     max-width: 1170px;
     padding: 0 15px;
@@ -251,9 +285,6 @@ h2{
     max-width: 1170px;
     padding: 15px;
     margin: 0 auto;
-    h2 {
-      padding-top: 30px;
-    }
   }
   &__box {
     padding: 15px 0;
@@ -551,6 +582,13 @@ h2{
       color: #ffffff;
       position: relative;
       padding: 0 10px;
+      &:hover,
+      &:focus {
+        i {
+          color: $orangeD;
+          transition: all 0.3s ease;
+        }
+      }
     }
   }
   &__brands-title {
@@ -621,8 +659,16 @@ h2{
         padding-right: 20px;
         padding-left: 20px;
       }
+      &:hover,
+      &:focus {
+        i {
+          color: $orangeD;
+          transition: all 0.3s ease;
+        }
+      }
       p {
         cursor: default;
+        margin: 0;
       }
     }
     input {
@@ -657,6 +703,13 @@ h2{
   &__link {
     a {
       padding-left: 15px;
+      &:hover,
+      &:focus {
+        i {
+          color: $orangeD;
+          transition: all 0.3s ease;
+        }
+      }
     }
     i {
       color: #ffffff;
